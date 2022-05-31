@@ -1,2 +1,2 @@
 # Basis_Of_Learning
- SnT Project -2022
+    SnT Project -2022
