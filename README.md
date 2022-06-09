@@ -187,10 +187,10 @@ Used to convert the notebook file to another format.
 
 ## **Assignment-1**
 
->[Python Basics](Python.ipynb)
+>[Python Basics](Assignment_1/Python.ipynb)
 
->[Pandas Basics](Pandas.ipynb)
+>[Pandas Basics](Assignment_1/Pandas.ipynb)
 
->[Numpy Basics](Numpy.ipynb)
+>[Numpy Basics](Assignment_1/Numpy.ipynb)
 
->[Matplotlib Basics](Matplotlib.ipynb)
+>[Matplotlib Basics](Assignment_1/Matplotlib.ipynb)
