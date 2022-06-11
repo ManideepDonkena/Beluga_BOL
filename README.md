@@ -237,9 +237,9 @@ $\hat{y}^{(i)} = 1 \, if \, a^{(i)} \geq 0, \, else \, 0$
 
 ** Step 3: ** Compute the weight updates using the perceptron learning rule
 
-$ \begin{equation}
+$$ \begin{equation}
 \Delta \boldsymbol{w} = \eta \, \boldsymbol{X}^T \cdot \big(\boldsymbol{\hat{y}} - \boldsymbol{y} \big)
-\end{equation} $
+\end{equation} $$
 $$ \Delta b = \eta \, \big(\boldsymbol{\hat{y}} - \boldsymbol{y} \big) $$
 
 where $\eta$ is the learning rate.
@@ -247,9 +247,9 @@ where $\eta$ is the learning rate.
 
 ** Step 4: ** Update the weights and bias
 
-$\begin{equation}
+$$\begin{equation}
 \boldsymbol{w} = \boldsymbol{w} + \Delta \boldsymbol{w}
-\end{equation}$
+\end{equation}$$
 
 $$
 b = b  + \Delta b
