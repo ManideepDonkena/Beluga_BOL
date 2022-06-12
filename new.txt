@@ -1,0 +1,13 @@
+neural network--> perceptron - weigts ,bias, activation(relu,lechy relu)
+forwad neural networkloss function - 1)empirical diff add avg
+2)mean square 3)binary
+***loss function -> minimising loss function(decrease gradient(wtr weights and bias)-->gradient descent)
+***activation function
+Back propagation  
+decaying learning rate
+HOME WORK
+from scratch(without using frameworks)
+
+groupnam(4 inputs,1hiddenlayer,3nodes)
+fnn()
+backprop()
