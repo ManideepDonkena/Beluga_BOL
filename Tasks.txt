@@ -8,6 +8,6 @@ decaying learning rate
 HOME WORK
 from scratch(without using frameworks)
 
-groupnam(4 inputs,1hiddenlayer,3nodes)
+groupnam(x,y inputs,1hiddenlayer,3nodes)
 fnn()
 backprop()

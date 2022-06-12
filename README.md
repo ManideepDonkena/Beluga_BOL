@@ -343,3 +343,50 @@ model.compile(
 
 You can also access these directly through the Keras API.if you wanted to tune parameters.
 
+## Bias In Neural Network
+
+
+
+>Bias is disproportionate weight in favour of or against a thing or idea usually in a prejudicial, unfair, and close-minded way. In most cases, bias is considered a negative thing because it clouds your judgment and makes you take irrational 
+decisions.
+
+
+## `The Concept of Biased Data`
+
+To understand a neural network bias system, we’ll first have to understand the concept of biased data. Whenever you feed your neural network with data, it affects the model’s behaviour.
+
+So, if you feed your neural network with biased data, you shouldn’t expect fair results from your algorithms. Using biased data can cause your system to give very flawed and unexpected results.
+
+Instead of being a simple and sweet chatbot, Tay turned into an aggressive and very offensive chatbot. People were spoiling it with numerous abusive posts which fed biased data to Tay and it only learned offensive phrasings. Tay was turned off very soon after that. Importance of Bias in Neural Network
+## `Working`
+* The Input neuron simply passes the feature from the data set while the Bias neuron imitates the additional feature. 
+* We combine the Input neuron with the Bias neuron to get an Output Neuron.
+* However, note that the additional input is always equal to 1. 
+
+* The Output Neuron can take inputs, process them, and generate the whole network’s output.
+## `Example`
+**linear regression model**
+
+In linear regression, we have 
+* Input neuron passing the feature (a1) 
+* Bias neuron mimics the same with (a0).
+
+Both of our inputs (a1, a0) will get multiplied by their respective weights (w1, w0). 
+
+A linear regression model has i=1 and a0=1. So the mathematical representation of the model is:
+
+**y = a1w1 + w0**
+
+Now, if we remove the bias neuron, we wouldn’t have any bias input, causing our model to look like this:
+
+**y = a1w1**
+****
+* We can see that, Without the bias input, our model must go through the origin point (0,0) in the graph. 
+
+* The slope of our line can change but it will only rotate from the origin.
+
+* To make our model flexible, we’ll have to add the bias input, which is not related to any input.
+
+ * It enables the model to move up and down the graph depending on the requirements.
+****
+**The primary reason why bias is required in neural networks is that, without bias weights, your model would have very limited movement when looking for a solution.**
