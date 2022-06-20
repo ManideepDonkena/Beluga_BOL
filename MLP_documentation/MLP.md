@@ -345,26 +345,21 @@ relative to those performed in forward propagation.
 
 ## **STEPS**
 ----
-## With Respect to $\mathbf{W}^{(1)}$
+ With Respect to   $\mathbf{W}^{(1)}$
 1. Calculate the gradients of the objective function $J=L+s$ with respect to the loss term $L$ and the regularization term $s$.
 
-$$\frac{\partial J}{\partial L} = 1 \; \text{and} \; \frac{\partial J}{\partial s} = 1.$$
+$$\frac{\partial J}{\partial L} = 1 \;\text{and} \; \frac{\partial J}{\partial s} = 1.$$
 
 2. Compute the gradient of the objective function
 with respect to variable of the output layer $\mathbf{o}$
 according to the chain rule:
 
-$$
-\frac{\partial J}{\partial \mathbf{o}}
-= \text{prod}\left(\frac{\partial J}{\partial L}, \frac{\partial L}{\partial \mathbf{o}}\right)
-= \frac{\partial L}{\partial \mathbf{o}}
-\in \mathbb{R}^q.
-$$
+$$\frac{\partial J}{\partial \mathbf{o}}= \text{prod}\left(\frac{\partial J}{\partial L}, \frac{\partial L}{\partial \mathbf{o}}\right) = \frac{\partial L}{\partial \mathbf{o}}\in \mathbb{R}^q.$$
+ 
 3. Calculate the gradients of the regularization term with respect to both parameters:
+ 
+$$\frac{\partial s}{\partial \mathbf{W}^{(1)}} = \lambda \mathbf{W}^{(1)}\; \text{and}\;\frac{\partial s}{\partial \mathbf{W}^{(2)}} = \lambda \mathbf{W}^{(2)}.$$
 
-$$\frac{\partial s}{\partial \mathbf{W}^{(1)}} = \lambda \mathbf{W}^{(1)}
-\; \text{and} \;
-\frac{\partial s}{\partial \mathbf{W}^{(2)}} = \lambda \mathbf{W}^{(2)}.$$
 ---
 **Now we are able to calculate the gradient
 $\partial J/\partial \mathbf{W}^{(2)} \in \mathbb{R}^{q \times h}$
@@ -373,7 +368,9 @@ Using the chain rule yields:**
 
 $$\frac{\partial J}{\partial \mathbf{W}^{(2)}}= \text{prod}\left(\frac{\partial J}{\partial \mathbf{o}}, \frac{\partial \mathbf{o}}{\partial \mathbf{W}^{(2)}}\right) + \text{prod}\left(\frac{\partial J}{\partial s}, \frac{\partial s}{\partial \mathbf{W}^{(2)}}\right)= \frac{\partial J}{\partial \mathbf{o}} \mathbf{h}^\top + \lambda \mathbf{W}^{(2)}.$$
 ---
-## with respect to $\mathbf{W}^{(1)}$
+ with respect to $\mathbf{W}^{(1)}$
+ 
+ 
 To obtain the gradient with respect to $\mathbf{W}^{(1)}$
 we need to continue backpropagation
 along the output layer to the hidden layer.
